@@ -1,6 +1,6 @@
 package com.solon.test;
 
-import com.solon.bean.Menu;
+import com.solon.bean.Person;
 
 /**
  * 测试类，用于测试代码
@@ -10,6 +10,6 @@ public class Test {
     @org.junit.jupiter.api.Test
     public void test() {
         //代码测试
-        Menu.exitMenu();
+        System.out.println(new Person("tom", "男", 18, "13164090883", "北京"));
     }
 }

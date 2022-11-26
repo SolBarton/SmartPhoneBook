@@ -7,18 +7,35 @@ package com.solon.bean;
 public class Person {
     private int id;//序号
     private String name;//姓名
-    private char sex;//性别
+    private String sex;//性别
     private int age;//年龄
     private String phoneNumber;//电话号码
     private String address;//地址
 
-    public Person(int id, String name, char sex, int age, String phoneNumber, String address) {
-        this.id = id;
+    //有参构造器
+    public Person(String name, String sex, int age, String phoneNumber, String address) {
         this.name = name;
         this.sex = sex;
         this.age = age;
         this.phoneNumber = phoneNumber;
         this.address = address;
+    }
+
+    //无参构造器
+    public Person() {}
+
+    /**
+     * 重写toString方法，用于格式化输出指定信息
+     * StringBuffer是底层是可变字符序列，增删操作效率更高，并且线程安全
+     * @return
+     */
+    @Override
+    public String toString() {
+        StringBuffer sb = new StringBuffer();
+        sb.append("序号：" + this.id + "#\t\t姓名：" + this.name + "\t\t性别：" + this.sex
+        + "\t\t年龄：" + this.age + "岁\t\t电话号码：" + this.phoneNumber + "\t\t地址："
+        + this.address);
+        return sb.toString();
     }
 
     public int getId() {
@@ -37,11 +54,11 @@ public class Person {
         this.name = name;
     }
 
-    public char getSex() {
+    public String getSex() {
         return sex;
     }
 
-    public void setSex(char sex) {
+    public void setSex(String sex) {
         this.sex = sex;
     }
 
@@ -68,4 +85,5 @@ public class Person {
     public void setAddress(String address) {
         this.address = address;
     }
+
 }
