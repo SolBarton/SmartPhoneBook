@@ -1,7 +1,7 @@
 package com.solon.app;
 
 import com.solon.bean.Menu;
-import com.solon.util.MyScanner;
+import com.solon.util.DataCheck;
 
 /**
  * 智能电话本项目入口类
@@ -25,9 +25,7 @@ public class App {
 
         while (loop) {
             Menu.mainMenu();//打开主菜单界面
-            System.out.print("请输入业务对应的数字，进入业务界面：");
-            //进行数字校验...
-            num = MyScanner.printInt();
+            num = DataCheck.menuOptionCheck(1, 6);//得到用户输入并校验后的数字
             switch (num) {
                 case 1:
                     //...
