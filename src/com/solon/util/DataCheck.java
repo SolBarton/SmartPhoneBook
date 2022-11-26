@@ -55,7 +55,7 @@ public class DataCheck {
      * @return 返回一个int类型
      */
     public static int ageCheck() {
-        String regex = "[100]{3}||[1-9]{1}[0-9]{1}||[1-9]{1}";
+        String regex = "[100]{3}||[1-9]{1}[0-9]{1}||[1-9]{1}";//定义验证输入年龄的正则表达式
         while (true) {
             System.out.println("温馨提示：输入年龄，只允许输入1-100的数字");
             System.out.print("请进行输入：");
@@ -74,7 +74,7 @@ public class DataCheck {
      * @return 返回一个String类型
      */
     public static String sexCheck() {
-        String regex = "[男]{1}||[女]{1}";
+        String regex = "[男]{1}||[女]{1}";//定义验证输入性别的正则表达式
         while (true) {
             System.out.println("温馨提示：输入性别，只允许输入中文\"男\"或\"女\"");
             System.out.print("请进行输入：");
@@ -88,18 +88,37 @@ public class DataCheck {
 
     /**
      * 对输入的电话号码进行验证
-     * 校验规则：
+     * 校验规则：满足用户输入的电话号码可以为座机号，也可以为手机号
      * @return 返回一个String类型
      */
     public static String phoneNumCheck() {
-        return null;//...
+        String regex = "(\\d{3,4}-\\d{7,8})||([1]{1}\\d{10})";//定义验证输入电话号码的正则表达式
+        while (true) {
+            System.out.println("温馨提示：输入电话号码，只允许输入手机号或者座机号(例如：XXX-XXXXXXX)");
+            System.out.print("请进行输入：");
+            String userInput = MyScanner.printString();//取出用户输入的信息
+            if(userInput.matches(regex)) {//进行判断
+                return userInput;
+            }
+            System.out.println("输入的电话号码不符合要求，请检查后重新输入！");
+        }
     }
 
     /**
      * 对输入的地址进行验证
+     * 校验规则：满足用户输入的地址构成为字母、数字、中文,长度不超过20
      * @return 返回一个String类型
      */
     public static String addressCheck() {
-        return null;//...
+        String regex = "[a-zA-z0-9\\u4e00-\\u9fa5]{1,20}";//定义验证输入地址的正则表达式
+        while (true) {
+            System.out.println("温馨提示：输入地址，允许使用字母、数字、中文，长度不超过20");
+            System.out.print("请进行输入：");
+            String userInput = MyScanner.printString();//取出用户输入的信息
+            if(userInput.matches(regex)) {//进行判断
+                return userInput;
+            }
+            System.out.println("输入的地址不符合要求，请检查后重新输入！");
+        }
     }
 }

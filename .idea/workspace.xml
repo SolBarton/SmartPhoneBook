@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="186d0e58-fbdb-4cd9-9881-0f931f4e3677" name="变更" comment="完成了menuOptionCheck方法">
+    <list default="true" id="186d0e58-fbdb-4cd9-9881-0f931f4e3677" name="变更" comment="完成了姓名、年龄、性别校验，下一步进行电话号码校验的代码编写">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solon/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solon/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solon/service/BusinessLogicControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solon/service/BusinessLogicControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solon/service/BusinessOperate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solon/service/BusinessOperate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/solon/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solon/test/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/solon/util/DataCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solon/util/DataCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solon/util/MyScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solon/util/MyScanner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,9 +138,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.Test" />
+        <item itemvalue="应用程序.App" />
         <item itemvalue="应用程序.DataCheck" />
         <item itemvalue="JUnit.DataCheck.test" />
-        <item itemvalue="应用程序.App" />
         <item itemvalue="JUnit.Test.test" />
       </list>
     </recent_temporary>
@@ -152,7 +154,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669376488953</updated>
       <workItem from="1669376491150" duration="1877000" />
-      <workItem from="1669431807793" duration="25541000" />
+      <workItem from="1669431807793" duration="31362000" />
     </task>
     <task id="LOCAL-00001" summary="Menu write">
       <created>1669439224151</created>
@@ -203,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669462138749</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="完成了姓名、年龄、性别校验，下一步进行电话号码校验的代码编写">
+      <created>1669465665678</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669465665678</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +237,7 @@
     <MESSAGE value="first version" />
     <MESSAGE value="second version" />
     <MESSAGE value="完成了menuOptionCheck方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了menuOptionCheck方法" />
+    <MESSAGE value="完成了姓名、年龄、性别校验，下一步进行电话号码校验的代码编写" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了姓名、年龄、性别校验，下一步进行电话号码校验的代码编写" />
   </component>
 </project>

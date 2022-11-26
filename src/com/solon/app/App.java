@@ -1,6 +1,7 @@
 package com.solon.app;
 
 import com.solon.bean.Menu;
+import com.solon.service.BusinessLogicControl;
 import com.solon.util.DataCheck;
 
 /**
@@ -21,23 +22,29 @@ public class App {
      */
     public void start() {
         boolean loop = true;//循环判断条件
-        int num;//用户输入的数字
+        int item;//用户输入的选项
+        BusinessLogicControl busControl = new BusinessLogicControl();//创建业务逻辑控制类的对象
 
         while (loop) {
             Menu.mainMenu();//打开主菜单界面
-            num = DataCheck.menuOptionCheck(1, 6);//得到用户输入并校验后的数字
-            switch (num) {
-                case 1:
-                    //...
-                case 2:
-                    //...
-                case 3:
-                    //...
-                case 4:
-                    //...
-                case 5:
-                    //...
-                case 6:
+            item = DataCheck.menuOptionCheck(1, 6);//得到用户输入并校验后的数字
+            switch (item) {
+                case 1://添加记录
+                    busControl.addLogic();
+                    break;
+                case 2://查找记录
+                    busControl.searchLogic();
+                    break;
+                case 3://修改记录
+                    busControl.modifyLogic();
+                    break;
+                case 4://删除记录
+                    busControl.deleteLogic();
+                    break;
+                case 5://排序记录
+                    busControl.sortLogic();
+                    break;
+                case 6://退出系统
                     Menu.exitMenu();
                     loop = false;
                     break;
