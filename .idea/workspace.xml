@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="186d0e58-fbdb-4cd9-9881-0f931f4e3677" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartPhoneBook.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/solon/app/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/solon/bean/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/solon/test/Test.java" afterDir="false" />
+    <list default="true" id="186d0e58-fbdb-4cd9-9881-0f931f4e3677" name="变更" comment="Menu write">
+      <change afterPath="$PROJECT_DIR$/src/com/solon/bean/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solon/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solon/app/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -65,7 +59,20 @@
       <recent name="com.solon.test" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="应用程序.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.solon.app.App" />
+      <module name="SmartPhoneBook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solon.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SmartPhoneBook" />
       <extension name="coverage">
@@ -84,6 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.App" />
         <item itemvalue="JUnit.Test.test" />
       </list>
     </recent_temporary>
@@ -97,8 +105,16 @@
       <option name="presentableId" value="Default" />
       <updated>1669376488953</updated>
       <workItem from="1669376491150" duration="1877000" />
-      <workItem from="1669431807793" duration="6728000" />
+      <workItem from="1669431807793" duration="8173000" />
     </task>
+    <task id="LOCAL-00001" summary="Menu write">
+      <created>1669439224151</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669439224151</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,5 +130,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Menu write" />
+    <option name="LAST_COMMIT_MESSAGE" value="Menu write" />
   </component>
 </project>
