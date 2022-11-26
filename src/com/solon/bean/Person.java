@@ -26,7 +26,7 @@ public class Person {
 
     /**
      * 重写toString方法，用于格式化输出指定信息
-     * StringBuffer是底层是可变字符序列，增删操作效率更高，并且线程安全
+     * StringBuffer底层是可变字符序列，增删操作效率更高，并且线程安全
      * @return
      */
     @Override

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="186d0e58-fbdb-4cd9-9881-0f931f4e3677" name="变更" comment="Person write">
+    <list default="true" id="186d0e58-fbdb-4cd9-9881-0f931f4e3677" name="变更" comment="improve Person">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/solon/service/BusinessLogicControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/solon/service/BusinessOperate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/solon/bean/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solon/bean/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solon/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solon/test/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +46,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
@@ -105,7 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669376488953</updated>
       <workItem from="1669376491150" duration="1877000" />
-      <workItem from="1669431807793" duration="11148000" />
+      <workItem from="1669431807793" duration="13311000" />
     </task>
     <task id="LOCAL-00001" summary="Menu write">
       <created>1669439224151</created>
@@ -121,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669440687168</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="improve Person">
+      <created>1669448991381</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669448991381</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +151,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Menu write" />
     <MESSAGE value="Person write" />
-    <option name="LAST_COMMIT_MESSAGE" value="Person write" />
+    <MESSAGE value="improve Person" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve Person" />
   </component>
 </project>
