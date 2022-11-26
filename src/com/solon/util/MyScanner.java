@@ -10,14 +10,6 @@ public class MyScanner {
     private static Scanner myScanner = new Scanner(System.in);//定义Scanner对象
 
     /**
-     * 获取用户输入的int类型信息
-     * @return 返回一个int类型
-     */
-    public static int printInt() {
-        return myScanner.nextInt();
-    }
-
-    /**
      * 获取用户输入的String类型信息
      * @return 返回一个int类型
      */

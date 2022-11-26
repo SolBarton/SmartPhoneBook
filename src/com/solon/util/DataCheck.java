@@ -7,6 +7,7 @@ package com.solon.util;
 public class DataCheck {
     /**
      * 对菜单输入选项进行验证
+     * 校验规则：1.满足用户输入的为0-9的数字并且长度为1 2.输入的数字在界面中有对应的业务选项
      * @param min 选项最小值
      * @param max 选项最大值
      * @return 返回一个int类型
@@ -32,30 +33,62 @@ public class DataCheck {
 
     /**
      * 对输入的姓名进行验证
+     * 校验规则：满足用户输入的姓名为中文或者英文，中文要求长度为1-5，英文要求2-10
      * @return 返回一个String类型
      */
     public static String nameCheck() {
-        return null;//...
+        String regex = "([a-zA-Z]{2,10})||([\\u4e00-\\u9fa5]{1,5})";//定义验证输入姓名的正则表达式
+        while (true) {
+            System.out.println("温馨提示：输入姓名，只允许输入长度为1-5的中文或长度为2-10的英文");
+            System.out.print("请进行输入:");
+            String userInput = MyScanner.printString();//取出用户输入的信息
+            if (userInput.matches(regex)) {//进行判断
+                return userInput;
+            }
+            System.out.println("输入的姓名不符合要求，请检查后重新输入！");
+        }
     }
 
     /**
      * 对输入的年龄进行验证
+     * 校验规则：满足用户输入的年龄范围在1-100
      * @return 返回一个int类型
      */
     public static int ageCheck() {
-        return 0;//...
+        String regex = "[100]{3}||[1-9]{1}[0-9]{1}||[1-9]{1}";
+        while (true) {
+            System.out.println("温馨提示：输入年龄，只允许输入1-100的数字");
+            System.out.print("请进行输入：");
+            String userInput = MyScanner.printString();//取出用户输入的信息
+            if (userInput.matches(regex)) {//进行判断
+                int inputAge = Integer.parseInt(userInput);
+                return inputAge;
+            }
+            System.out.println("输入的年龄不符合要求，请检查后重新输入！");
+        }
     }
 
     /**
      * 对输入的性别进行验证
+     * 校验规定：满足用户输入性别为男或者女
      * @return 返回一个String类型
      */
     public static String sexCheck() {
-        return null;//...
+        String regex = "[男]{1}||[女]{1}";
+        while (true) {
+            System.out.println("温馨提示：输入性别，只允许输入中文\"男\"或\"女\"");
+            System.out.print("请进行输入：");
+            String userInput = MyScanner.printString();//取出用户输入的信息
+            if (userInput.matches(regex)) {//进行判断
+                return userInput;
+            }
+            System.out.println("输入的性别不符合要求，请检查后重新输入！");
+        }
     }
 
     /**
      * 对输入的电话号码进行验证
+     * 校验规则：
      * @return 返回一个String类型
      */
     public static String phoneNumCheck() {

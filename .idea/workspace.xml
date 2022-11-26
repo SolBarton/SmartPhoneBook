@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="186d0e58-fbdb-4cd9-9881-0f931f4e3677" name="变更" comment="second version">
+    <list default="true" id="186d0e58-fbdb-4cd9-9881-0f931f4e3677" name="变更" comment="完成了menuOptionCheck方法">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solon/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solon/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solon/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solon/test/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/solon/util/DataCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solon/util/DataCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solon/util/MyScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solon/util/MyScanner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,7 @@
       <recent name="com.solon.test" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.App">
+  <component name="RunManager" selected="应用程序.Test">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.solon.app.App" />
       <module name="SmartPhoneBook" />
@@ -70,6 +71,48 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.solon.util.DataCheck" />
+      <module name="SmartPhoneBook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solon.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.solon.test.Test" />
+      <module name="SmartPhoneBook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solon.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataCheck.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SmartPhoneBook" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.solon.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.solon.util" />
+      <option name="MAIN_CLASS_NAME" value="com.solon.util.DataCheck" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -92,6 +135,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Test" />
+        <item itemvalue="应用程序.DataCheck" />
+        <item itemvalue="JUnit.DataCheck.test" />
         <item itemvalue="应用程序.App" />
         <item itemvalue="JUnit.Test.test" />
       </list>
@@ -106,7 +152,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669376488953</updated>
       <workItem from="1669376491150" duration="1877000" />
-      <workItem from="1669431807793" duration="22142000" />
+      <workItem from="1669431807793" duration="25541000" />
     </task>
     <task id="LOCAL-00001" summary="Menu write">
       <created>1669439224151</created>
@@ -150,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669457812111</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="完成了menuOptionCheck方法">
+      <created>1669462138749</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669462138749</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +227,7 @@
     <MESSAGE value="add service package's content" />
     <MESSAGE value="first version" />
     <MESSAGE value="second version" />
-    <option name="LAST_COMMIT_MESSAGE" value="second version" />
+    <MESSAGE value="完成了menuOptionCheck方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了menuOptionCheck方法" />
   </component>
 </project>
