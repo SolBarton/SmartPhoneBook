@@ -1,10 +1,48 @@
 package com.solon.service;
 
+import com.solon.bean.Person;
+
+import java.util.Comparator;
+
 /**
  * 业务操作类，主要具体负责增、删、改、查、排序等的方法实现
  */
 @SuppressWarnings({"all"})
 public class BusinessOperate {
+
+    /**
+     * SortName内部类，实现一个按姓名排序的比较器的功能
+     */
+    class SortName implements Comparator<Person> {
+
+        @Override
+        public int compare(Person o1, Person o2) {
+            return 0;
+        }
+    }
+
+    /**
+     * SortAge内部类，实现一个按年龄排序的比较器
+     */
+    class SortAge implements Comparator<Person> {
+
+        @Override
+        public int compare(Person o1, Person o2) {
+            return 0;
+        }
+    }
+
+    /**
+     * SortSex内部类，实现一个按性别排序的比较器
+     */
+    class SortSex implements Comparator<Person> {
+
+        @Override
+        public int compare(Person o1, Person o2) {
+            return 0;
+        }
+    }
+
     /**
      * 添加新纪录操作
      */
