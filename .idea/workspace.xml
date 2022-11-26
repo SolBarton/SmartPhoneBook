@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="186d0e58-fbdb-4cd9-9881-0f931f4e3677" name="变更" comment="add service package's content">
-      <change afterPath="$PROJECT_DIR$/src/com/solon/util/DataCheck.java" afterDir="false" />
+    <list default="true" id="186d0e58-fbdb-4cd9-9881-0f931f4e3677" name="变更" comment="first version">
+      <change afterPath="$PROJECT_DIR$/src/com/solon/util/MyScanner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solon/service/BusinessOperate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solon/service/BusinessOperate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solon/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solon/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/solon/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solon/test/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,7 @@
       <recent name="com.solon.test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Test.test">
+  <component name="RunManager" selected="应用程序.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.solon.app.App" />
       <module name="SmartPhoneBook" />
@@ -92,8 +93,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Test.test" />
         <item itemvalue="应用程序.App" />
+        <item itemvalue="JUnit.Test.test" />
       </list>
     </recent_temporary>
   </component>
@@ -106,7 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669376488953</updated>
       <workItem from="1669376491150" duration="1877000" />
-      <workItem from="1669431807793" duration="14821000" />
+      <workItem from="1669431807793" duration="18417000" />
     </task>
     <task id="LOCAL-00001" summary="Menu write">
       <created>1669439224151</created>
@@ -136,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669451229658</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="first version">
+      <created>1669452932602</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669452932602</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +166,7 @@
     <MESSAGE value="Person write" />
     <MESSAGE value="improve Person" />
     <MESSAGE value="add service package's content" />
-    <option name="LAST_COMMIT_MESSAGE" value="add service package's content" />
+    <MESSAGE value="first version" />
+    <option name="LAST_COMMIT_MESSAGE" value="first version" />
   </component>
 </project>
