@@ -1,6 +1,6 @@
 package com.solon.test;
 
-import com.solon.app.App;
+import com.solon.util.DataCheck;
 
 /**
  * 测试类，用于测试代码
@@ -9,6 +9,6 @@ import com.solon.app.App;
 public class Test {
     public static void main(String[] args) {
         //测试代码
-        new App().start();
+        DataCheck.ageCheck();
     }
 }

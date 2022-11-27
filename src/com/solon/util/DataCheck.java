@@ -55,7 +55,7 @@ public class DataCheck {
      * @return 返回一个int类型
      */
     public static int ageCheck() {
-        String regex = "[100]{3}||[1-9]{1}[0-9]{1}||[1-9]{1}";//定义验证输入年龄的正则表达式
+        String regex = "100||[1-9]{1}[0-9]{1}||[1-9]{1}";//定义验证输入年龄的正则表达式
         while (true) {
             System.out.println("温馨提示：输入年龄，只允许输入1-100的数字");
             System.out.print("请进行输入：");
