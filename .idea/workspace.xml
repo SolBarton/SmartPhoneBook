@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="186d0e58-fbdb-4cd9-9881-0f931f4e3677" name="变更" comment="完成了App类、BusinessLogicControl类，下一步依次实现增、删、改、查、排序等具体方法">
+    <list default="true" id="186d0e58-fbdb-4cd9-9881-0f931f4e3677" name="变更" comment="完成了增、删业务功能，接下来实现查找、修改业务">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solon/service/BusinessLogicControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solon/service/BusinessLogicControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/solon/service/BusinessOperate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solon/service/BusinessOperate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/solon/util/DataCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/solon/util/DataCheck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +151,7 @@
       <updated>1669376488953</updated>
       <workItem from="1669376491150" duration="1877000" />
       <workItem from="1669431807793" duration="31785000" />
-      <workItem from="1669530471730" duration="5364000" />
+      <workItem from="1669530471730" duration="8401000" />
     </task>
     <task id="LOCAL-00001" summary="Menu write">
       <created>1669439224151</created>
@@ -218,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669482247552</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="完成了增、删业务功能，接下来实现查找、修改业务">
+      <created>1669535911255</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669535911255</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +250,7 @@
     <MESSAGE value="完成了menuOptionCheck方法" />
     <MESSAGE value="完成了姓名、年龄、性别校验，下一步进行电话号码校验的代码编写" />
     <MESSAGE value="完成了App类、BusinessLogicControl类，下一步依次实现增、删、改、查、排序等具体方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了App类、BusinessLogicControl类，下一步依次实现增、删、改、查、排序等具体方法" />
+    <MESSAGE value="完成了增、删业务功能，接下来实现查找、修改业务" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了增、删业务功能，接下来实现查找、修改业务" />
   </component>
 </project>

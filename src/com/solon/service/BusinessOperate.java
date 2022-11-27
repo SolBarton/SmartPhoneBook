@@ -103,35 +103,141 @@ public class BusinessOperate {
      * 按姓名查询记录操作
      */
     public void searchByName() {
-        System.out.println("按姓名查询记录");
+        if(persons.size() == 0) {//判断列表中是否有记录
+            System.out.println("温馨提示：您的列表空空如也，什么也查不到~~");
+            return;
+        }
+
+        //列表中存在记录的操作
+        int index = -1;//记录要查询内容的索引
+        System.out.println("====**请输入想要查找的姓名**====");
+        String userInput = DataCheck.nameCheck();
+        System.out.println("====================================**查询结果如下**====================================");
+        for (int i = 0; i < persons.size(); i++) {
+            if(((persons.get(i)).getName()).equals(userInput)) {//查到列表中存在的操作
+                index = i;
+                System.out.println(persons.get(index));
+            }
+
+            //没有查询到的操作
+            if(i == (persons.size() - 1) && index == -1) {
+                System.out.println("                                没有查询到记录此姓名的信息                                  ");
+            }
+        }
+        System.out.println("======================================***********======================================");
+
     }
 
     /**
      * 按年龄查询记录操作
      */
     public void searchByAge() {
-        System.out.println("按年龄查询记录");
+        if(persons.size() == 0) {//判断列表中是否有记录
+            System.out.println("温馨提示：您的列表空空如也，什么也查不到~~");
+            return;
+        }
+
+        //列表中存在记录的操作
+        int index = -1;//记录要查询内容的索引
+        System.out.println("====**请输入想要查找的年龄**====");
+        int userInput = DataCheck.ageCheck();
+        System.out.println("====================================**查询结果如下**====================================");
+        for (int i = 0; i < persons.size(); i++) {
+            if((persons.get(i)).getAge() == userInput) {//查到列表中存在的操作
+                index = i;
+                System.out.println(persons.get(index));
+            }
+
+            //没有查询到的操作
+            if(i == (persons.size() - 1) && index == -1) {
+                System.out.println("                                没有查询到记录此年龄的信息                                  ");
+            }
+        }
+        System.out.println("======================================***********======================================");
     }
 
     /**
      * 按性别查询记录操作
      */
     public void searchBySex() {
-        System.out.println("按性别查询记录");
+        if(persons.size() == 0) {//判断列表中是否有记录
+            System.out.println("温馨提示：您的列表空空如也，什么也查不到~~");
+            return;
+        }
+
+        //列表中存在记录的操作
+        int index = -1;//记录要查询内容的索引
+        System.out.println("====**请输入想要查找的性别**====");
+        String userInput = DataCheck.sexCheck();
+        System.out.println("====================================**查询结果如下**====================================");
+        for (int i = 0; i < persons.size(); i++) {
+            if(((persons.get(i)).getSex()).equals(userInput)) {//查到列表中存在的操作
+                index = i;
+                System.out.println(persons.get(index));
+            }
+
+            //没有查询到的操作
+            if(i == (persons.size() - 1) && index == -1) {
+                System.out.println("                                没有查询到记录此性别的信息                                  ");
+            }
+        }
+        System.out.println("======================================***********======================================");
     }
 
     /**
      * 按电话号码查询记录操作
      */
     public void searchByPhone() {
-        System.out.println("按电话号码查询记录");
+        if(persons.size() == 0) {//判断列表中是否有记录
+            System.out.println("温馨提示：您的列表空空如也，什么也查不到~~");
+            return;
+        }
+
+        //列表中存在记录的操作
+        int index = -1;//记录要查询内容的索引
+        System.out.println("====**请输入想要查找的电话号码**====");
+        String userInput = DataCheck.phoneNumCheck();
+        System.out.println("====================================**查询结果如下**====================================");
+        for (int i = 0; i < persons.size(); i++) {
+            if(((persons.get(i)).getPhoneNumber()).equals(userInput)) {//查到列表中存在的操作
+                index = i;
+                System.out.println(persons.get(index));
+            }
+
+            //没有查询到的操作
+            if(i == (persons.size() - 1) && index == -1) {
+                System.out.println("                               没有查询到记录此电话号码的信息                                  ");
+            }
+        }
+        System.out.println("======================================***********======================================");
     }
 
     /**
      * 按住址查询记录操作
      */
     public void searchByAddress() {
-        System.out.println("按住址查询记录");
+        if(persons.size() == 0) {//判断列表中是否有记录
+            System.out.println("温馨提示：您的列表空空如也，什么也查不到~~");
+            return;
+        }
+
+        //列表中存在记录的操作
+        int index = -1;//记录要查询内容的索引
+        System.out.println("====**请输入想要查找的地址**====");
+        String userInput = DataCheck.addressCheck();
+        System.out.println("====================================**查询结果如下**====================================");
+        for (int i = 0; i < persons.size(); i++) {
+            if(((persons.get(i)).getAddress()).equals(userInput)) {//查到列表中存在的操作
+                index = i;
+                System.out.println(persons.get(index));
+            }
+
+            //没有查询到的操作
+            if(i == (persons.size() - 1) && index == -1) {
+                System.out.println("                                没有查询到记录此地址的信息                                  ");
+            }
+        }
+        System.out.println("======================================***********======================================");
     }
 
     /**
