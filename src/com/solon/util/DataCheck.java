@@ -15,7 +15,7 @@ public class DataCheck {
     public static int menuOptionCheck(int min, int max) {
         String regex = "[0-9]{1}";//定义验证菜单选择的正则表达式
         while (true) {
-            System.out.println("温馨提示：输入业务选项数字，范围为" + min + "~" + max);
+            System.out.println("温馨提示：请输入数字，范围为" + min + "~" + max);
             System.out.print("请进行输入：");
             String userInput = MyScanner.printString();//取出用户输入的信息
             if(userInput.matches(regex)) {//初步校验是否内容和长度有误
@@ -94,7 +94,7 @@ public class DataCheck {
     public static String phoneNumCheck() {
         String regex = "(\\d{3,4}-\\d{7,8})||([1]{1}\\d{10})";//定义验证输入电话号码的正则表达式
         while (true) {
-            System.out.println("温馨提示：输入电话号码，只允许输入手机号或者座机号(例如：XXX-XXXXXXX)");
+            System.out.println("温馨提示：输入电话号码，只允许输入手机号(1XXXXX)或者座机号(例如：XXX-XXXXXXX)");
             System.out.print("请进行输入：");
             String userInput = MyScanner.printString();//取出用户输入的信息
             if(userInput.matches(regex)) {//进行判断
