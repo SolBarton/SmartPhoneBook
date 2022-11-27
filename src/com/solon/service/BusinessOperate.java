@@ -1,5 +1,6 @@
 package com.solon.service;
 
+import com.solon.bean.Menu;
 import com.solon.bean.Person;
 import com.solon.util.DataCheck;
 
@@ -244,7 +245,73 @@ public class BusinessOperate {
      * 修改指定记录操作
      */
     public void modify() {
-        System.out.println("修改指定记录");
+        if(persons.size() == 0) {//列表中没有记录的操作
+            System.out.println("温馨提示：抱歉，您的列表中没有能进行修改的记录~~");
+            return;
+        }
+
+        //列表中存在记录的操作
+        Person person = null;//表示要进行修改的对象
+        showAll();//方便用户修改前获取到信息序号
+        System.out.println("====**请输入想要修改列表记录所对应的序号**====");
+        int userInput = DataCheck.menuOptionCheck(1, persons.size());
+        person = persons.get(userInput - 1);//要修改的对象
+        while (true) {
+            Menu.modifySubMenu();//调用打开修改页面子界面
+            int item = DataCheck.menuOptionCheck(1, 7);
+            switch (item) {
+                case 1://修改姓名
+                    System.out.println("====**请输入修改后的姓名**====");
+                    String nameInput = DataCheck.nameCheck();
+                    person.setName(nameInput);
+                    System.out.println("====**修改成功**====");
+                    System.out.println("====================================**修改结果如下**====================================");
+                    System.out.println(person);//输出修改后的对象
+                    System.out.println("======================================***********======================================");
+                    break;
+                case 2://修改年龄
+                    System.out.println("====**请输入修改后的年龄**====");
+                    int ageInput = DataCheck.ageCheck();
+                    person.setAge(ageInput);
+                    System.out.println("====**修改成功**====");
+                    System.out.println("====================================**修改结果如下**====================================");
+                    System.out.println(person);//输出修改后的对象
+                    System.out.println("======================================***********======================================");
+                    break;
+                case 3://修改性别
+                    System.out.println("====**请输入修改后的性别**====");
+                    String sexInput = DataCheck.sexCheck();
+                    person.setSex(sexInput);
+                    System.out.println("====**修改成功**====");
+                    System.out.println("====================================**修改结果如下**====================================");
+                    System.out.println(person);//输出修改后的对象
+                    System.out.println("======================================***********======================================");
+                    break;
+                case 4://修改号码
+                    System.out.println("====**请输入修改后的号码**====");
+                    String phoneInput = DataCheck.phoneNumCheck();
+                    person.setPhoneNumber(phoneInput);
+                    System.out.println("====**修改成功**====");
+                    System.out.println("====================================**修改结果如下**====================================");
+                    System.out.println(person);//输出修改后的对象
+                    System.out.println("======================================***********======================================");
+                    break;
+                case 5://修改地址
+                    System.out.println("====**请输入修改后的地址**====");
+                    String addressInput = DataCheck.addressCheck();
+                    person.setAddress(addressInput);
+                    System.out.println("====**修改成功**====");
+                    System.out.println("====================================**修改结果如下**====================================");
+                    System.out.println(person);//输出修改后的对象
+                    System.out.println("======================================***********======================================");
+                    break;
+                case 6://返回上一级
+                    return;
+                case 7://退出系统
+                    Menu.exitMenu();
+                    System.exit(0);
+            }
+        }
     }
 
     /**
