@@ -4,7 +4,10 @@ import com.solon.bean.Menu;
 import com.solon.bean.Person;
 import com.solon.util.DataCheck;
 
+import java.text.Collator;
+import java.util.Collections;
 import java.util.Comparator;
+import java.util.Locale;
 import java.util.Vector;
 
 /**
@@ -21,7 +24,13 @@ public class BusinessOperate {
 
         @Override
         public int compare(Person o1, Person o2) {
-            return 0;
+            //说明：
+            //1.Locale类通常用来表示不同国家、地区等，它提供了一些方便的静态常量，
+            //  可以使用它来为常用的区域设置创建Locale对象,例如：Locale.CHINA 表示中国地区
+            //2.Collator抽象类执行区域设置的String比较，可以使用此类来构建语言文本的搜索和排序，
+            //  而getInstance方法可以获得给定的语言环境的Collator对象
+            Collator collator = Collator.getInstance(Locale.CHINA);
+            return collator.compare(o1.getName(), o2.getName());
         }
     }
 
@@ -32,7 +41,8 @@ public class BusinessOperate {
 
         @Override
         public int compare(Person o1, Person o2) {
-            return 0;
+            //将两个Person对象的年龄相减，返回一个int值
+            return o1.getAge() - o2.getAge();
         }
     }
 
@@ -43,7 +53,9 @@ public class BusinessOperate {
 
         @Override
         public int compare(Person o1, Person o2) {
-            return 0;
+            //同上SortName比较器实现原理一样
+            Collator collator = Collator.getInstance(Locale.CHINA);
+            return collator.compare(o1.getSex(), o2.getSex());
         }
     }
 
@@ -355,23 +367,59 @@ public class BusinessOperate {
 
     /**
      * 按姓名来排序记录操作
+     * 排序规则：按照字母顺序进行正序排序，从首字母开始依次比较
      */
     public void sortByName() {
-        System.out.println("按姓名来排序记录");
+        if(persons.size() == 0) {//列表中没有记录的操作
+            System.out.println("温馨提示：您的列表空空如也，无法进行排序功能~~");
+            return;
+        }
+
+        //列表中有记录的操作
+        Collections.sort(persons, new SortName());//调用sort方法实现排序
+        //排序后重新规定序号
+        for (int i = 0; i < persons.size(); i++) {
+            (persons.get(i)).setId(i + 1);
+        }
+        System.out.println("=====**按姓名排序成功**=====");
     }
 
     /**
      * 按年龄来排序记录操作
+     * 排序规则：按照年龄从小到大排序
      */
     public void sortByAge() {
-        System.out.println("按年龄来排序记录");
+        if(persons.size() == 0) {//列表中没有记录的操作
+            System.out.println("温馨提示：您的列表空空如也，无法进行排序功能~~");
+            return;
+        }
+
+        //列表中有记录的操作
+        Collections.sort(persons, new SortAge());//调用sort方法实现排序
+        //排序后重新规定序号
+        for (int i = 0; i < persons.size(); i++) {
+            (persons.get(i)).setId(i + 1);
+        }
+        System.out.println("=====**按年龄排序成功**=====");
     }
 
     /**
      * 按性别来排序记录操作
+     * 排序规则：按照字母顺序进行正序排序，从首字母开始依次比较
      */
     public void sortBySex() {
-        System.out.println("按性别来排序记录");
+        if(persons.size() == 0) {//列表中没有记录的操作
+            System.out.println("温馨提示：您的列表空空如也，无法进行排序功能~~");
+            return;
+        }
+
+        //列表中有记录的操作
+        Collections.sort(persons, new SortSex());//调用sort方法实现排序
+        //排序后重新规定序号
+        for (int i = 0; i < persons.size(); i++) {
+            (persons.get(i)).setId(i + 1);
+        }
+        System.out.println("=====**按性别排序成功**=====");
     }
 
     public Vector<Person> getPersons() {
