@@ -1,10 +1,12 @@
 package com.solon.bean;
 
+import java.io.Serializable;
+
 /**
  * 实体类Person，存放联系人的各种数据模型
  */
 @SuppressWarnings({"all"})
-public class Person {
+public class Person implements Serializable {
     private int id;//序号
     private String name;//姓名
     private String sex;//性别

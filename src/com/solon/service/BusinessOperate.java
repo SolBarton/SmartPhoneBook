@@ -15,7 +15,7 @@ import java.util.Vector;
  */
 @SuppressWarnings({"all"})
 public class BusinessOperate {
-    private Vector<Person> persons = new Vector<>();//用Vector集合类来存放Person对象
+    private static Vector<Person> persons = new Vector<>();//用Vector集合类来存放Person对象
 
     /**
      * SortName内部类，实现一个按姓名排序的比较器的功能
@@ -319,9 +319,6 @@ public class BusinessOperate {
                     break;
                 case 6://返回上一级
                     return;
-                case 7://退出系统
-                    Menu.exitMenu();
-                    System.exit(0);
             }
         }
     }

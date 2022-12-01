@@ -2,13 +2,15 @@ package com.solon.service;
 
 import com.solon.bean.Menu;
 import com.solon.util.DataCheck;
+import com.solon.util.FileOperation;
 
 /**
  * 业务逻辑控制类，主要负责各项业务的逻辑实现
  */
 @SuppressWarnings({"all"})
 public class BusinessLogicControl {
-    private BusinessOperate busOperate = new BusinessOperate();//创建一个BusinessOperate对象
+    BusinessOperate busOperate = new BusinessOperate();//创建一个BusinessOperate对象
+    FileOperation fileOperation = new FileOperation();//创建文件操作工具类的对象
 
     /**
      * 用户添加记录业务控制
@@ -29,6 +31,7 @@ public class BusinessLogicControl {
                 case 3://返回上一级
                     return;
                 case 4://退出系统
+                    fileOperation.fileSave();//保存更新文件
                     Menu.exitMenu();
                     System.exit(0);//直接关闭java虚拟机
             }
@@ -66,6 +69,7 @@ public class BusinessLogicControl {
                 case 7://返回上一级
                     return;
                 case 8://退出系统
+                    fileOperation.fileSave();//保存更新文件
                     Menu.exitMenu();
                     System.exit(0);
             }
@@ -91,6 +95,7 @@ public class BusinessLogicControl {
                 case 3://返回上一级
                     return;
                 case 4://退出系统
+                    fileOperation.fileSave();//保存更新文件
                     Menu.exitMenu();
                     System.exit(0);
             }
@@ -119,6 +124,7 @@ public class BusinessLogicControl {
                 case 4://返回上一级
                     return;
                 case 5://退出系统
+                    fileOperation.fileSave();//保存更新文件
                     Menu.exitMenu();
                     System.exit(0);
             }
@@ -150,6 +156,7 @@ public class BusinessLogicControl {
                 case 5://返回上一级
                     return;
                 case 6://退出系统
+                    fileOperation.fileSave();//保存更新文件
                     Menu.exitMenu();
                     System.exit(0);
             }

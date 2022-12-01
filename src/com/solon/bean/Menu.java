@@ -74,7 +74,6 @@ public class Menu {
         System.out.println("**           4.修改号码              **");
         System.out.println("**           5.修改地址              **");
         System.out.println("**           6.返回上一级            **");
-        System.out.println("**           7.退出系统              **");
         System.out.println("  ==================================  ");
     }
 
